@@ -1,83 +1,263 @@
-# the monetary bartering system consists of basic imaginary currency, units. every item is given a set unit value. the values of all items in one's possession combined is their value, and there are no units outside real items. the base for 1 unit is a single hi-chew (50 grams), and items are valued on their weight. the value of the unit does not change, but resource farming can technically cause inflation.
+# the monetary bartering system consists of basic imaginary currency, units. every item is given a set unit value. the values of all items in one's possession combined is their value, and there are no units outside real items. the base for 1 unit is 50 grams, and items are valued on their weight. the value of the unit does not change, but resource farming can technically cause inflation.
 #there will be an item class, a person class, and a trade function, which includes a reference to a person's trading methods.
 
-# The class system for every known thing made of matter so the system can generate the items
-# Based on "List of states of matter" (https://en.wikipedia.org/wiki/List_of_states_of_matter) page on Wikipedia, and all links on that page.
-class Item:
+# The periodic table split into a class structure so the system can create every possible thing on earth and define its value based on its weight, 50 grams = 1 unit
+# Chemical Groups:
+class Nonmetal:
+    pass
+class Alkali_Metal:
+    pass
+class Alkaline_Earth_Metal:
+    pass
+class Transition_Metal:
+    pass
+class Post_Transition_Metal:
+    pass
+class Metalloid:
+    pass
+class Halogen:
+    pass
+class Noble_Gas:
+    pass
+class Lanthanide:
+    pass
+class Actinide:
     pass
 
-class Solid(Item):
-    value_multiplier = 
-class Amorphous_solid(Solid):
-    definition = "Solid which does not exhibit crystalline structure."
-    value_multiplier = 
-class Nano_structured_materials(Amorphous_solid):
+class Hydrogen(Nonmetal):
     pass
-class Amorphous_thin_films(Amorphous_solid):
+class Carbon(Nonmetal):
     pass
-class Soils(Amorphous_solid):
+class Nitrogen(Nonmetal):
     pass
-class Crystalline_solid(Solid):
+class Oxgen(Nonmetal):
     pass
-class Plastic_crystal(Solid):
+class Phosphorus(Nonmetal):
     pass
-class Quasi_crystal(Solid):
+class Sulfur(Nonmetal):
+    pass
+class Selenium(Nonmetal):
     pass
 
-class Liquid(Item):
+class Lithium(Alkali_Metal):
     pass
-class Liquid_crystal(Liquid):
+class Sodium(Alkali_Metal):
     pass
-
-class Gas(Item):
+class Potassium(Alkali_Metal):
     pass
-
-class Plasma(Item):
+class Rubidium(Alkali_Metal):
     pass
-
-class Supercritical_fluid(Item):
+class Cesium(Alkali_Metal):
     pass
-
-class Degenerate_matter(Item):
-    pass
-class Electron_degenerate_matter(Degenerate_matter):
-    pass
-class Neutron_degenerate_matter(Degenerate_matter):
-    pass
-class Strange_matter(Degenerate_matter):
-    pass
-class Quantum_spin_Hall_state(Degenerate_matter):
+class Francium(Alkali_Metal):
     pass
 
-class Bose_Einstin_condensate(Item):
+class Beryllium(Alkaline_Earth_Metal):
+    pass
+class Magnesium(Alkaline_Earth_Metal):
+    pass
+class Calcium(Alkaline_Earth_Metal):
+    pass
+class Strontium(Alkaline_Earth_Metal):
+    pass
+class Barium(Alkaline_Earth_Metal):
+    pass
+class Radium(Alkaline_Earth_Metal):
     pass
 
-class Fermionic_condensate(Item):
+class Scandium(Transition_Metal):
+    pass
+class Titanium(Transition_Metal):
+    pass
+class Vanadium(Transition_Metal):
+    pass
+class Chromium(Transition_Metal):
+    pass
+class Manganese(Transition_Metal):
+    pass
+class Iron(Transition_Metal):
+    pass
+class Cobalt(Transition_Metal):
+    pass
+class Nickel(Transition_Metal):
+    pass
+class Copper(Transition_Metal):
+    pass
+class Zinc(Transition_Metal):
+    pass
+class Yttrium(Transition_Metal):
+    pass
+class Zirconium(Transition_Metal):
+    pass
+class Niobium(Transition_Metal):
+    pass
+class Molybdenum(Transition_Metal):
+    pass
+class Technetium(Transition_Metal):
+    pass
+class Ruthenium(Transition_Metal):
+    pass
+class Rhodium(Transition_Metal):
+    pass
+class Palladium(Transition_Metal):
+    pass
+class Silver(Transition_Metal):
+    pass
+class Cadmium(Transition_Metal):
+    pass
+class Hafnium(Transition_Metal):
+    pass
+class Tantalum(Transition_Metal):
+    pass
+class Tungsten(Transition_Metal):
+    pass
+class Rhenium(Transition_Metal):
+    pass
+class Osmium(Transition_Metal):
+    pass
+class Iridium(Transition_Metal):
+    pass
+class Platinum(Transition_Metal):
+    pass
+class Gold(Transition_Metal):
+    pass
+class Mercury(Transition_Metal):
+    pass
+class Rutherfordium(Transition_Metal):
+    pass
+class Dubnium(Transition_Metal):
+    pass
+class Seaborgium(Transition_Metal):
+    pass
+class Bohrium(Transition_Metal):
+    pass
+class Hassium(Transition_Metal):
+    pass
+class Meitnerium(Transition_Metal):
+    pass
+class Darmstadtium(Transition_Metal):
+    pass
+class Roentgenium(Transition_Metal):
+    pass
+class Copernicium(Transition_Metal):
     pass
 
-class Superconducitivity(Item):
+class Aluminum(Post_Transition_Metal):
+    pass
+class Gallium(Post_Transition_Metal):
+    pass
+class Indium(Post_Transition_Metal):
+    pass
+class Tin(Post_Transition_Metal):
+    pass
+class Thallium(Post_Transition_Metal):
+    pass
+class Lead(Post_Transition_Metal):
+    pass
+class Bismuth(Post_Transition_Metal):
+    pass
+class Nihonium(Post_Transition_Metal):
+    pass
+class Flerovium(Post_Transition_Metal):
+    pass
+class Moscovium(Post_Transition_Metal):
+    pass
+class Livermorium(Post_Transition_Metal):
     pass
 
-class Superfluid(Item):
+class Boron(Metalloid):
+    pass
+class Silicon(Metalloid):
+    pass
+class Germanium(Metalloid):
+    pass
+class Arsenic(Metalloid):
+    pass
+class Antimony(Metalloid):
+    pass
+class Tellurium(Metalloid):
+    pass
+class Polonium(Metalloid):
     pass
 
-class Supersolid(Item):
+class Fluorine(Halogen):
+    pass
+class Chlorine(Halogen):
+    pass
+class Bromine(Halogen):
+    pass
+class Iodine(Halogen):
+    pass
+class Astatine(Halogen):
+    pass
+class Tennessine(Halogen):
     pass
 
-class Quantum_spin_liquid(Item):
+class Helium(Noble_Gas):
+    pass
+class Neon(Noble_Gas):
+    pass
+class Argon(Noble_Gas):
+    pass
+class Krypton(Noble_Gas):
+    pass
+class Xenon(Noble_Gas):
+    pass
+class Radon(Noble_Gas):
+    pass
+class Oganesson(Noble_Gas):
     pass
 
-class String_net_liquid(Item):
+class Lanthanum(Lanthanide):
+    pass
+class Cerium(Lanthanide):
+    pass
+class Praseodymium(Lanthanide):
+    pass
+class Neodymium(Lanthanide):
+    pass
+class Promethium(Lanthanide):
+    pass
+class Samarium(Lanthanide):
+    pass
+class Europium(Lanthanide):
+    pass
+class Gadolinium(Lanthanide):
+    pass
+class Terbium(Lanthanide):
+    pass
+class Dysprosium(Lanthanide):
+    pass
+class Holmium(Lanthanide):
+    pass
+class Erbium(Lanthanide):
+    pass
+class Thulium(Lanthanide):
+    pass
+class Ytterbium(Lanthanide):
+    pass
+class Lutetium(Lanthanide):
     pass
 
-class Time_crystals(Item):
+class Actinum(Actinide):
     pass
-
-class Rydberg_polaron(Item):
+class Thorium(Actinide):
     pass
-
-class Black_superionic_ice(Item):
+class Protactinium(Actinide):
     pass
-
-class Quark_gluon_plasma(Item):
+class Uranium(Actinide):
+    pass
+class Neptunium(Actinide):
+    pass
+class Plutonium(Actinide):
+    pass
+class Americum(Actinide):
+    pass
+class Curium(Actinide):
+    pass
+class Berkelium(Actinide):
+    pass
+class Californium(Actinide):
+    pass
+class Einstienium(Actinide):
     pass
