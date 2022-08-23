@@ -25,39 +25,39 @@ class Actinide:
     pass
 
 class Hydrogen(Nonmetal):
-    pass
+    weight = 1.0080
 class Carbon(Nonmetal):
-    pass
+    weight = 12.011
 class Nitrogen(Nonmetal):
-    pass
+    weight = 14.007
 class Oxgen(Nonmetal):
-    pass
+    weight = 15.999
 class Phosphorus(Nonmetal):
-    pass
+    weight = 30.97376200
 class Sulfur(Nonmetal):
-    pass
+    weight = 32.07
 class Selenium(Nonmetal):
-    pass
+    weight = 78.97
 
 class Lithium(Alkali_Metal):
-    pass
+    weight = 7.0
 class Sodium(Alkali_Metal):
-    pass
+    weight = 22.9897693
 class Potassium(Alkali_Metal):
-    pass
+    weight = 39.0983
 class Rubidium(Alkali_Metal):
-    pass
+    weight = 85.468
 class Cesium(Alkali_Metal):
-    pass
+    weight = 132.9054520
 class Francium(Alkali_Metal):
-    pass
+    weight = 223.01973
 
 class Beryllium(Alkaline_Earth_Metal):
-    pass
+    weight = 9.012183
 class Magnesium(Alkaline_Earth_Metal):
-    pass
+    weight = 24.305
 class Calcium(Alkaline_Earth_Metal):
-    pass
+    weight = 
 class Strontium(Alkaline_Earth_Metal):
     pass
 class Barium(Alkaline_Earth_Metal):
