@@ -57,190 +57,190 @@ class Beryllium(Alkaline_Earth_Metal):
 class Magnesium(Alkaline_Earth_Metal):
     weight = 24.305
 class Calcium(Alkaline_Earth_Metal):
-    weight = 
+    weight = 40.08
 class Strontium(Alkaline_Earth_Metal):
-    pass
+    weight = 87.62
 class Barium(Alkaline_Earth_Metal):
-    pass
+    weight = 137.33
 class Radium(Alkaline_Earth_Metal):
-    pass
+    weight = 226.02541
 
 class Scandium(Transition_Metal):
-    pass
+    weight = 44.95591
 class Titanium(Transition_Metal):
-    pass
+    weight = 47.867
 class Vanadium(Transition_Metal):
-    pass
+    weight = 50.9415
 class Chromium(Transition_Metal):
-    pass
+    weight = 51.996
 class Manganese(Transition_Metal):
-    pass
+    weight = 54.93319
 class Iron(Transition_Metal):
-    pass
+    weight = 55.84
 class Cobalt(Transition_Metal):
-    pass
+    weight = 58.93319
 class Nickel(Transition_Metal):
-    pass
+    weight = 58.693
 class Copper(Transition_Metal):
-    pass
+    weight = 63.55
 class Zinc(Transition_Metal):
-    pass
+    weight = 65.4
 class Yttrium(Transition_Metal):
-    pass
+    weight = 88.90584
 class Zirconium(Transition_Metal):
-    pass
+    weight = 91.22
 class Niobium(Transition_Metal):
-    pass
+    weight = 92.90637
 class Molybdenum(Transition_Metal):
-    pass
+    weight = 95.95
 class Technetium(Transition_Metal):
-    pass
+    weight = 96.90636
 class Ruthenium(Transition_Metal):
-    pass
+    weight = 101.1
 class Rhodium(Transition_Metal):
-    pass
+    weight = 102.9055
 class Palladium(Transition_Metal):
-    pass
+    weight = 106.42
 class Silver(Transition_Metal):
-    pass
+    weight = 107.868
 class Cadmium(Transition_Metal):
-    pass
+    weight = 112.41
 class Hafnium(Transition_Metal):
-    pass
+    weight = 178.49
 class Tantalum(Transition_Metal):
-    pass
+    weight = 180.9479
 class Tungsten(Transition_Metal):
-    pass
+    weight = 183.84
 class Rhenium(Transition_Metal):
-    pass
+    weight = 186.207
 class Osmium(Transition_Metal):
-    pass
+    weight = 190.2
 class Iridium(Transition_Metal):
-    pass
+    weight = 192.22
 class Platinum(Transition_Metal):
-    pass
+    weight = 195.08
 class Gold(Transition_Metal):
-    pass
+    weight = 196.96657
 class Mercury(Transition_Metal):
-    pass
+    weight = 200.59
 class Rutherfordium(Transition_Metal):
-    pass
+    weight = 267.122
 class Dubnium(Transition_Metal):
-    pass
+    weight = 268.126
 class Seaborgium(Transition_Metal):
-    pass
+    weight = 269.129
 class Bohrium(Transition_Metal):
-    pass
+    weight = 270.133
 class Hassium(Transition_Metal):
-    pass
+    weight = 269.1336
 class Meitnerium(Transition_Metal):
-    pass
+    weight = 277.154
 class Darmstadtium(Transition_Metal):
-    pass
+    weight = 282.166
 class Roentgenium(Transition_Metal):
-    pass
+    weight = 282.169
 class Copernicium(Transition_Metal):
-    pass
+    weight = 286.179
 
 class Aluminum(Post_Transition_Metal):
-    pass
+    weight = 26.981538
 class Gallium(Post_Transition_Metal):
-    pass
+    weight = 69.723
 class Indium(Post_Transition_Metal):
-    pass
+    weight = 114.818
 class Tin(Post_Transition_Metal):
-    pass
+    weight = 118.71
 class Thallium(Post_Transition_Metal):
-    pass
+    weight = 204.383
 class Lead(Post_Transition_Metal):
-    pass
+    weight = 207
 class Bismuth(Post_Transition_Metal):
-    pass
+    weight = 208.98040
 class Nihonium(Post_Transition_Metal):
-    pass
+    weight = 286.182
 class Flerovium(Post_Transition_Metal):
-    pass
+    weight = 290.192
 class Moscovium(Post_Transition_Metal):
-    pass
+    weight = 290.196
 class Livermorium(Post_Transition_Metal):
-    pass
+    weight = 293.205
 
 class Boron(Metalloid):
-    pass
+    weight = 10.81
 class Silicon(Metalloid):
-    pass
+    weight = 28.085
 class Germanium(Metalloid):
-    pass
+    weight = 72.63
 class Arsenic(Metalloid):
-    pass
+    weight = 74.92159
 class Antimony(Metalloid):
-    pass
+    weight = 121.760
 class Tellurium(Metalloid):
-    pass
+    weight = 127.6
 class Polonium(Metalloid):
-    pass
+    weight = 208.98243
 
 class Fluorine(Halogen):
-    pass
+    weight = 18.99840316
 class Chlorine(Halogen):
-    pass
+    weight = 35.45
 class Bromine(Halogen):
-    pass
+    weight = 79.90
 class Iodine(Halogen):
-    pass
+    weight = 126.9045
 class Astatine(Halogen):
-    pass
+    weight = 209.98715
 class Tennessine(Halogen):
-    pass
+    weight = 294.211
 
 class Helium(Noble_Gas):
-    pass
+    weight = 4.00260
 class Neon(Noble_Gas):
-    pass
+    weight = 20.180
 class Argon(Noble_Gas):
-    pass
+    weight = 39.9
 class Krypton(Noble_Gas):
-    pass
+    weight = 83.80
 class Xenon(Noble_Gas):
-    pass
+    weight = 131.29
 class Radon(Noble_Gas):
-    pass
+    weight = 222.01758
 class Oganesson(Noble_Gas):
-    pass
+    weight = 295.216
 
 class Lanthanum(Lanthanide):
-    pass
+    weight = 138.9055
 class Cerium(Lanthanide):
-    pass
+    weight = 140.116
 class Praseodymium(Lanthanide):
-    pass
+    weight = 140.90766
 class Neodymium(Lanthanide):
-    pass
+    weight = 144.24
 class Promethium(Lanthanide):
-    pass
+    weight = 144.91276
 class Samarium(Lanthanide):
-    pass
+    weight = 150.4
 class Europium(Lanthanide):
-    pass
+    weight = 151.964
 class Gadolinium(Lanthanide):
-    pass
+    weight = 157.2
 class Terbium(Lanthanide):
-    pass
+    weight = 158.29585
 class Dysprosium(Lanthanide):
-    pass
+    weight = 162.500
 class Holmium(Lanthanide):
-    pass
+    weight = 164.93033
 class Erbium(Lanthanide):
-    pass
+    weight = 167.26
 class Thulium(Lanthanide):
-    pass
+    weight = 168.93422
 class Ytterbium(Lanthanide):
-    pass
+    weight = 173.05
 class Lutetium(Lanthanide):
-    pass
+    weight = 174.9668
 
 class Actinum(Actinide):
-    pass
+    weight = 
 class Thorium(Actinide):
     pass
 class Protactinium(Actinide):
