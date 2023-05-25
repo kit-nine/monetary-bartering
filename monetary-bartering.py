@@ -31,8 +31,6 @@ elements_amus = {'H' : 1.008,'HE' : 4.003, 'LI' : 6.941, 'BE' : 9.012, 'B' : 10.
 
 elements_percentages = {}
 
-print(value_an_object(1000, {"H": .33, "O": .67}))
-
 # explanation and getting input
 print("this program finds the chemical value of the object you input. to make this work you'll need:\n- an object\n- its weight\n- the percent composition of each element it is composed of\nif you don't know all of these, please look them up before proceeding.")
 next_output = input("\ncontinue? y/n ")
@@ -40,16 +38,14 @@ if next_output.lower() == "y":
     while True:
         object_name = input("\nbegin by telling me the name of the object i'll be appraising:\n")
         object_weight = float(input(f"\nalright, how heavy (in grams) is the {object_name} that i'll be appraising?\n"))
-        object_elements = input("\ntype out the letter symbols of all the elements in your object, separated by commas.\nfor example, type, \"H, O\" if your object is water. your turn:\n").split(", ")
+        object_elements = input("\ntype out the letter symbols of all the elements in your object, separated by commas.\nfor example, type, \"H, O\" if your object is water. your turn:\n").upper().split(", ")
         print("\nnow you'll be entering what percentage of the object is made up of each element. make sure that these\npercentages are written as decimals less than 1, and the total is exactly 1. otherwise, my answer might not be accurate!")
         for i in object_elements:
             element_percentage = float(input(f"\nwhat percent (as a decimal less than 1) of {object_name} is made up of {i}?\n"))
             elements_percentages[i] = element_percentage
         e_p_string = ""
-        if input(f"\nalright, just to check, here's your object again:\n- object: {object_name}\n- weight: {object_weight}\n- elements: {[i for i, j in elements_percentages.items()]}\n- percentages: {[j for i, j in elements_percentages.items()]}\n\n is that all correct? y/n ") == "y":
+        if input(f"\nalright, just to check, here's your object again:\n- object: {object_name}\n- weight: {object_weight}\n- elements: {[i for i, j in elements_percentages.items()]}\n- percentages: {[j for i, j in elements_percentages.items()]}\n\n is that all correct? y/n ").lower() == "y":
             break
         else: print("alright, then i suppose we should restart.\n\n\n")
     object_value = value_an_object(object_weight, elements_percentages)
     print(f"\ngreat! the value of your {object_name} is ʇ{object_value}", end="")
-
-# still broken what
