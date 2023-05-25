@@ -31,17 +31,19 @@ elements_amus = {'H' : 1.008,'HE' : 4.003, 'LI' : 6.941, 'BE' : 9.012, 'B' : 10.
 
 elements_percentages = {}
 
-# testing
-print(value_an_object(1000, {"H": .33, "O": .67}))
+# print(value_an_object(1000, {"H": .33, "O": .67}))
 
 # explanation and getting input
 print("this program finds the chemical value of the object you input. to make this work you'll need:\n- an object\n- its weight\n- the percent composition of each element it is composed of\nif you don't know all of these, please look them up before proceeding.")
 next_output = input("continue? y/n ")
+question_loop = True
 if next_output.lower() == "y":
-    object_name = input("begin by telling me the name of the object i'll be appraising: ")
-    object_weight = float(input(f"alright, how heavy (in grams) is the {object_name} that i'll be appraising? "))
-    object_elements = input("type out the letter symbols of all the elements in your object, separated by commas.\nfor example, type, \"H, O\" if your object is water. your turn: ").split()
-    print("now you'll be entering what percentage of the object is made up of each element. make sure that these\npercentages are written as decimals less than 1, and the total is exactly 1. otherwise, my answer might not be accurate!")
-    for i in object_elements:
-        object_percentage = float(input(f"what percent (as a decimal less than 1) of {object_name} is made up of {i}? "))
-        elements_percentages
+    while question_loop:
+        object_name = input("begin by telling me the name of the object i'll be appraising: ")
+        object_weight = float(input(f"alright, how heavy (in grams) is the {object_name} that i'll be appraising? "))
+        object_elements = input("type out the letter symbols of all the elements in your object, separated by commas.\nfor example, type, \"H, O\" if your object is water. your turn: ").split(", ")
+        print("now you'll be entering what percentage of the object is made up of each element. make sure that these\npercentages are written as decimals less than 1, and the total is exactly 1. otherwise, my answer might not be accurate!")
+        for i in object_elements:
+            object_percentage = float(input(f"what percent (as a decimal less than 1) of {object_name} is made up of {i}? "))
+            elements_percentages[i] = object_percentage
+        print(f"alright, just to check, here's your object again:\n- object: {object_name}\n- weight: {object_weight}\n- elements: {[i + ", " + elements_percentages[i] for i in object_elements]}"
