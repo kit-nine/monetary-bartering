@@ -51,3 +51,5 @@ if next_output.lower() == "y":
         else: print("alright, then i suppose we should restart.\n\n\n")
     object_value = value_an_object(object_weight, elements_percentages)
     print(f"\ngreat! the value of your {object_name} is ʇ{object_value}", end="")
+
+# still broken what
